@@ -33,8 +33,8 @@ public class Area {
     String radius;
     do{
         System.out.println("Enter a radius:");
-        radius=input.next();
-    }while((isNegative(radius))||(!isNumber(radius)) || (radius==" "));
+        radius=input.nextLine();
+    }while((isNegative(radius))||(!isNumber(radius)) || (radius==""));
     System.out.println("The area of a circle of radius "+ radius + " is "+ Circle.getArea(radius) );
     }
 }
