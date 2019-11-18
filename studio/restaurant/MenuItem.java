@@ -10,6 +10,7 @@ public class MenuItem {
     private String desription;
     private String category;
     private Date modifiedDate;
+    private boolean isNew;
 
     public MenuItem(String aName, double aPrice, String aDesc,String aCategory, Date aModifiedDate){
         this.name=aName;
@@ -17,6 +18,7 @@ public class MenuItem {
         this.desription=aDesc;
         this.category=aCategory;
         this.modifiedDate= aModifiedDate;
+        this.isNew=true;
     }
     public MenuItem(String aName, double aPrice, String aCategory, Date aModifiedDate){
         this.name=aName;
