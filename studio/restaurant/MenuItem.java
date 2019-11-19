@@ -1,16 +1,13 @@
 package studio.restaurant;
 
 import java.util.Date;
-import java.util.UUID;
 
 public class MenuItem {
     private String name;
-    private final String id = UUID.randomUUID().toString();
     private double price;
     private String desription;
     private String category;
     private Date modifiedDate;
-    private boolean isNew;
 
     public MenuItem(String aName, double aPrice, String aDesc,String aCategory, Date aModifiedDate){
         this.name=aName;
@@ -18,7 +15,6 @@ public class MenuItem {
         this.desription=aDesc;
         this.category=aCategory;
         this.modifiedDate= aModifiedDate;
-        this.isNew=true;
     }
     public MenuItem(String aName, double aPrice, String aCategory, Date aModifiedDate){
         this.name=aName;
@@ -27,12 +23,6 @@ public class MenuItem {
         this.category=aCategory;
         this.modifiedDate= aModifiedDate;
     }
-    public String getId(){
-        return id;
-    }
-//    public void setId(String id){
-//        this.id=id;
-//    }
     public String getName(){
         return name;
     }
@@ -74,3 +64,4 @@ public class MenuItem {
                 '}';
     }
    }
+

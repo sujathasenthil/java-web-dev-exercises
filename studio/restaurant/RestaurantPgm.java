@@ -28,7 +28,7 @@ public class RestaurantPgm {
         MenuItem menuItem5 = new MenuItem("Chicken Noodles", 6.99, "Noodles with Chicken", "Main Course", new Date());
         menuItems.add(menuItem5);
 
-        menu.setMenuItems(menuItems);
+        //menu.setMenuItems(menuItems);
         //  System.out.println(menu);
         while (true) {
             System.out.println("Please select an option");
