@@ -13,10 +13,7 @@ public class RestaurantPgm {
         double price;
         String description;
         String category;
-        // Date modifiedDate;
         java.util.Date date = new java.util.Date();
-        // System.out.println(date);
-        //modifiedDate=java.time.LocalDate.now();
         MenuItem menuItem1 = new MenuItem("Chicken Briyani", 12.99, "Chicken Flavoured Rice", "Main Course", new Date());
         menuItems.add(menuItem1);
         MenuItem menuItem2 = new MenuItem("Hash Browns", 3.99, "small potato nudgets", "Appetizer", new Date());
@@ -27,9 +24,7 @@ public class RestaurantPgm {
         menuItems.add(menuItem4);
         MenuItem menuItem5 = new MenuItem("Chicken Noodles", 6.99, "Noodles with Chicken", "Main Course", new Date());
         menuItems.add(menuItem5);
-
-        //menu.setMenuItems(menuItems);
-        //  System.out.println(menu);
+        menu.setMenuItems(menuItems);
         while (true) {
             System.out.println("Please select an option");
             System.out.println("1)Add MenuItem");
@@ -53,14 +48,12 @@ public class RestaurantPgm {
                 input.nextLine();
                 System.out.println("can u give description of " + name + "?");
                 description = input.nextLine();
-
                 System.out.println(name + " goes under what category ?");
                 category = input.nextLine();
                 MenuItem newMenu = new MenuItem(name, price, description, category, date);
                 menuItems.add(newMenu);
-              //  menu.addItem(newMenu);
                 menu.setMenuItems(menuItems);
-                System.out.println(menu);
+                System.out.println("New Menu is Added");
             }
             if (menuChoice == 2) {
                 System.out.println("Enter the menu name to remove");
@@ -68,6 +61,7 @@ public class RestaurantPgm {
                 for (MenuItem item : menuItems) {
                     if ((item.getName()).toLowerCase().equals(itemToRemove.toLowerCase())) {
                         menuItems.remove(item);
+                        System.out.println("Ur selected Menu is Removed");
                     }
                 }
                 System.out.println(menuItems);

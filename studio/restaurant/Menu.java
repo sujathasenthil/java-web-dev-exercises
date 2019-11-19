@@ -14,24 +14,10 @@ public class Menu {
         this.menuItems = menuItems;
     }
     public ArrayList<MenuItem> getMenuItems(){
-  //  public ArrayList<String> getMenuItems() {
-//        ArrayList<String> menuItems=new ArrayList<>();
-//        for(MenuItem menulist:this.menuItems){
-//            String itemlisted="";
-//            itemlisted += menulist.getName() + "     ";
-//            System.out.println(itemlisted);
-//            itemlisted += menulist.getCategory() + "     ";
-//            System.out.println(itemlisted);
-//            itemlisted += menulist.getPrice();
-//            System.out.println(itemlisted);
-//            menuItems.add(itemlisted);
-//            System.out.println(menuItems);
-      //  }
         return menuItems;
     }
     public void removeItem(MenuItem item){
         this.menuItems.remove(item);
-    //    this.modifiedDate=modifiedDate;
     }
     @Override
     public String toString() {
