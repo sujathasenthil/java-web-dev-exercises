@@ -62,9 +62,10 @@ public class RestaurantPgm {
                     if ((item.getName()).toLowerCase().equals(itemToRemove.toLowerCase())) {
                         menuItems.remove(item);
                         System.out.println("Ur selected Menu is Removed");
+                        break;
                     }
                 }
-                System.out.println(menuItems);
+              //  System.out.println(menuItems);
             }
             if (menuChoice == 3) {
                 System.out.println((menu));
