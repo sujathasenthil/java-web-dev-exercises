@@ -8,6 +8,9 @@ public class HouseCat extends Cat {
         super(aWeight);
         name = aName;
     }
+    public HouseCat(String aName) {
+        name = aName;
+    }
 
     public boolean isSatisfied() {
         return !isHungry() && !isTired();
@@ -21,4 +24,5 @@ public class HouseCat extends Cat {
     public String purr() {
         return "I'm a HouseCat";
     }
+
 }
